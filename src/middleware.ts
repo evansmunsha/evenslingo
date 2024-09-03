@@ -4,7 +4,7 @@ import { NextResponse } from "next/server"
 const isProtectedRoute = createRouteMatcher(["/group(.*)"])
 
 export default clerkMiddleware(async (auth, req) => {
-  const baseHost = "localhost:3000"
+  const baseHost = "evenslingo-3g7u.vercel.app"
   const host = req.headers.get("host")
   const reqPath = req.nextUrl.pathname
   const origin = req.nextUrl.origin

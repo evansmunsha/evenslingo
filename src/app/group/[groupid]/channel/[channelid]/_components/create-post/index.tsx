@@ -22,7 +22,7 @@ const CreateNewPost = ({ channelid, userImage, username }: Props) => {
               <CardContent className="p-3 bg-[#1A1A1D] flex gap-x-6 items-center ">
                 <Avatar className="cursor-pointer">
                   <AvatarImage src={userImage} alt="user" />
-                  <AvatarFallback>U</AvatarFallback>
+                  <AvatarFallback>You</AvatarFallback>
                 </Avatar>
                 <CardDescription className="text-themeTextGray">
                   Type / to add elements to your post...
@@ -35,7 +35,7 @@ const CreateNewPost = ({ channelid, userImage, username }: Props) => {
         <div className="flex gap-x-3">
           <Avatar className="cursor-pointer">
             <AvatarImage src={userImage} alt="user" />
-            <AvatarFallback>U</AvatarFallback>
+            <AvatarFallback>You</AvatarFallback>
           </Avatar>
           <div className="flex flex-col">
             <p className="text-themeTextGray text-sm capitalize">{username}</p>
